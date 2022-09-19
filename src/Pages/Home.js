@@ -4,6 +4,7 @@ import Gallery from '../Components/Gallery/Gallery';
 import Header from '../Components/Home/Header';
 import PeopleSay from '../Components/Home/PeopleSay';
 import Services from '../Components/Services/Services';
+import Footer from '../Components/utility/Footer';
 import SectionHeading from '../Components/utility/SectionHeading';
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
                 <SectionHeading title1={'What'} title2={'People Say'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor viverra  parturient diam sagittis nec cras.'} />
             </div>
             <PeopleSay />
+            <Footer/>
         </>
     );
 };
