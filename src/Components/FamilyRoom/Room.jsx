@@ -21,7 +21,7 @@ const Room = () => {
                 <span className='py-[4px] px-[14px] text-white font-bold bg-primary rounded-[5px]'>$799</span>
             </div>
             <p className='mt-[21px] text-neutral text-base font-light leading-[25px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo et</p>
-            <p className='mt-[21px] mb-[10px] text-end text-secondary font-medium'>Booking <img className='ml-3 inline' src="/images/icon/right arow.png" alt="" /></p>
+            <p className='mt-[21px] mb-[10px] text-end text-secondary font-medium cursor-pointer'>Booking <img className='ml-3 inline' src="/images/icon/right arow.png" alt="" /></p>
         </div>
     );
 };
