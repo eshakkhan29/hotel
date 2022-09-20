@@ -2,7 +2,7 @@ import React from 'react';
 
 const Service = () => {
     return (
-        <div className='bg-white shadow-[2px_0px_8px_rgba(0,0,0,0.15),0px_2px_8px_rgba(0,0,0,0.15)] py-[15px] px-[23px]'>
+        <div className='cursor-pointer bg-white shadow-[2px_0px_8px_rgba(0,0,0,0.15),0px_2px_8px_rgba(0,0,0,0.15)] py-[15px] px-[23px]'>
             <div className='w-[44px] h-[44px] rounded-full bg-secondary flex items-center justify-center'>
                 <img src="/images/icon/resturant.svg" alt="" />
             </div>

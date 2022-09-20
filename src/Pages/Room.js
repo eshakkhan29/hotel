@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import FamilyRoom from '../Components/FamilyRoom/FamilyRoom';
 import BookingForm from '../Components/utility/BookingForm';
 import Footer from '../Components/utility/Footer';
@@ -36,10 +36,10 @@ const Room = () => {
                         </div>
                     </div>
                     <div className='flex items-center justify-between mt-[70px]'>
-                        <Link className='text-[22px] font-medium text-neutral' to='/'>Description</Link>
-                        <Link className='text-[22px] text-[#747474]' to='/'>Additional Information</Link>
-                        <Link className='text-[22px] text-[#747474]' to='/'>Review</Link>
-                        <Link className='text-[22px] text-[#747474]' to='/'>Pricing Plans</Link>
+                        <NavLink className={({ isActive }) => (isActive ? "text-[22px] font-medium text-neutral" : "text-[22px] text-[#747474]")} to='Description'>Description</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? "text-[22px] font-medium text-neutral" : "text-[22px] text-[#747474]")} to='Information'>Additional Information</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? "text-[22px] font-medium text-neutral" : "text-[22px] text-[#747474]")} to='Review'>Review</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? "text-[22px] font-medium text-neutral" : "text-[22px] text-[#747474]")} to='Pricing'>Pricing Plans</NavLink>
                     </div>
                 </div>
                 <div className='lg:w-4/12'>
@@ -47,16 +47,7 @@ const Room = () => {
                     <img className='mt-[30px] w-full' src="/images/roomDetails/room details (2).png" alt="" />
                 </div>
             </div>
-            <div className='mt-[56px] lg:w-8/12 mx-auto px-2 lg:px-0'>
-                <p className='text-neutral font-medium'>Room Size: <span className='font-normal'>50ft</span></p>
-                <p className='mt-[8px] text-neutral font-medium'>Location: <span className='font-normal'>5th floor</span></p>
-                <p className='mt-[8px] text-neutral font-medium'>Bed : <span className='font-normal'>2 double bed</span></p>
-                <p className='mt-[8px] text-neutral font-medium'>View: <span className='font-normal'>Panama Sea view</span></p>
-                <p className='mt-[8px] text-neutral font-medium'>Smoking: <span className='font-normal'>Yes</span></p>
-                <p className='mt-[20px] text-[#747474]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla velit, molestie sollicitudin sit ultrices arcu vitae nam tellus. Lacus justo, ut ut id turpis. Arcu vitae eget dignissim etiam nunc felis purus ut. Pellentesque aenean quis ipsum, tellus nam condimentum cras. Arcu dolor morbi mauris malesuada elit a. Nunc, commodo eu at amet euismod vulputate a dictum. Placerat sagittis, laoreet odio ipsum hendrerit. Sed pharetra eu maecenas elit neque nullam. Tristique ligula hendrerit luctus enim. Mauris ut lacus sit ac eu consequat </p>
-                <img className='my-[20px]' src="/images/icon/comma.svg" alt="" />
-                <p className='mt-[20px] text-[#747474]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla velit, molestie sollicitudin sit ultrices arcu vitae nam tellus. Lacus justo, ut ut id turpis. Arcu vitae eget dignissim etiam nunc felis purus ut. Pellentesque aenean quis ipsum, tellus nam condimentum cras. Arcu dolor morbi mauris malesuada elit a. Nunc, commodo eu at amet euismod vulputate a dictum. Placerat sagittis</p>
-            </div>
+            <Outlet />
             <div className='py-[60px]'>
                 <SectionHeading title1={'Our'} title2={'Room'} />
             </div>
