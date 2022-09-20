@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <div className='py-[100px]'>
+            <div className='pb-[52px] pt-[100px]'>
                 <SectionHeading title1={'Our'} title2={'Room'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor viverra  parturient diam sagittis nec cras.'} />
             </div>
             <FamilyRoom />

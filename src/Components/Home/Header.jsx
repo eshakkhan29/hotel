@@ -14,7 +14,7 @@ const Header = () => {
                 <h3 className='mt-[10px] text-[48px] font-normal text-white'>On Hotel Booking Online</h3>
                 <button className='mt-[58px] py-[14px] px-[29px] text-white bg-accent rounded-[5px] text-base font-medium'>Booking Now</button>
             </div>
-            <div className='relative bottom-[45px] lg:w-[1110px] mx-auto'>
+            <div className='absolute left-1/2 -bottom-[60px] -translate-x-1/2 lg:w-[1110px] mx-auto'>
                 <BookingForm customClass={'items-center gap-x-[10px]'} space={'py-[38px] px-[22px]'} />
             </div>
         </div>

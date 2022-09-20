@@ -3,6 +3,7 @@ import './App.css';
 import RoomDescription from './Components/RoomDetails/RoomDescription';
 import Foods from './Components/Services/Foods/Foods';
 import AboutUs from './Pages/AboutUs';
+import Booking from './Pages/Booking';
 import Home from './Pages/Home';
 import Room from './Pages/Room';
 import RoomsAndSuites from './Pages/RoomsAndSuites';
@@ -26,6 +27,7 @@ function App() {
           <Route path='' element={<Foods />}></Route>
         </Route>
         <Route path='About-us' element={<AboutUs/>}></Route>
+        <Route path='Booking' element={<Booking/>}></Route>
       </Routes>
     </div>
   );
