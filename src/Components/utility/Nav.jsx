@@ -15,8 +15,8 @@ const Nav = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-transparent rounded-box w-52">
-                            <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/'>Home</NavLink>
-                            <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/Rooms'>Rooms & Sultes</NavLink>
+                            <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/home'>Home</NavLink>
+                            <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/Rooms'>Rooms & Suites</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/Services'>Services</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/About-us'>About US</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/Booking'>Booking</NavLink>
@@ -26,7 +26,7 @@ const Nav = () => {
                 {/* desktop */}
                 <div className="navbar-start hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
-                        <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/'>Home</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/home'>Home</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/Rooms'>Rooms & Suites</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/Services'>Services</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? "text-white text-base mr-[32px]" : "text-base text-[#C2C7CE] mr-[32px]")} to='/About-us'>About US</NavLink>
